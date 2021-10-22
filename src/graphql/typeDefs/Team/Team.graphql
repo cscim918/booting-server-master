@@ -1,0 +1,25 @@
+type Team{
+    id: Int!
+    leader: User!
+    members: [User!]!
+}
+
+type Mutation{
+    addTeam(leader_no: String!, member1_no: String!, member2_no: String!): addTeamResponse!
+}
+
+type addTeamResponse{
+    ok: Boolean!
+    team: Team
+    message: String!
+}
+
+type Query{
+    filtering(age1:Int, age2:Int, filter: String, major: String, mbti: String): FilteringResponse!
+}
+
+type FilteringResponse{
+    ok: Boolean!
+    user: [User]
+    message: String!
+}

@@ -1,0 +1,29 @@
+type Booting {
+  id: Int!
+  team1_leader_studentId: String
+  team2_leader_studentId: String
+}
+
+type Query {
+  checkBooting(studentId: String!): CheckBootingResponse!
+}
+
+type Mutation {
+  matchBooting(
+    id: Int
+    team1_leader_studentId: String
+    team2_leader_studentId: String
+  ): MatchBootingResponse!
+}
+
+type MatchBootingResponse {
+  ok: Boolean!
+  booting: Booting
+  message: String
+}
+
+type CheckBootingResponse {
+  ok: Boolean!
+  booting: [Booting]
+  message: String
+}

@@ -1,0 +1,25 @@
+  
+{
+    "development": {
+      "username": "bunnit",
+      "password": null,
+      "database": "booting",
+      "host": "localhost",
+      "dialect": "postgres",
+      "logging": false
+    },
+    "test": {
+      "username": "bunnit",
+      "password": null,
+      "database": "booting",
+      "host": "localhost",
+      "dialect": "postgres"
+    },
+    "production": {
+      "username": "bunnit",
+      "password": null,
+      "database": "booting",
+      "host": "localhost",
+      "dialect": "postgres"
+    }
+}
